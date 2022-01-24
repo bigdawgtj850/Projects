@@ -1,0 +1,43 @@
+.centeredText {
+    text-align: center;
+}
+
+.postFormat {
+    font-family: cursive;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 30px;
+    background-image: url('../images/Yellow-note.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    box-shadow: 8px 8px 12px black;
+}
+
+.BigPostFormat {
+    font-family: cursive;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 30px;
+    height: 700px;
+    background-image: url('../images/Yellow-note.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.BigPostText{
+    text-align: center;
+    max-width: 500px;
+    margin-left: 25%;
+}
+
+.postTitle {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.postText {
+    text-align: left;
+}

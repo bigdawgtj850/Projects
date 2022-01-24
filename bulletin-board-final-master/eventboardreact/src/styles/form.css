@@ -1,0 +1,30 @@
+.form {
+    display:inline-block;
+    background-color: yellowgreen;
+    width: 400px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 8px 8px 12px black;
+    
+}
+
+.reset {
+    display: inline-block;
+    margin: 10px;
+}
+
+.reset :active {
+    box-shadow: 5px 5px #666;
+    transform: translateY(4px);
+}
+
+.submit {
+    display: inline-block;
+    margin: 10px;
+}
+
+.submit :active {
+    box-shadow: 5px 5px #666;
+    transform: translateY(4px);
+}

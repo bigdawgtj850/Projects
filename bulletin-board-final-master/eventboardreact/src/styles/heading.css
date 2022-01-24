@@ -1,0 +1,12 @@
+.App-page h2 {
+    background-color:greenyellow;
+    width: 400px;
+    text-align: center;
+    font-size: 30px;
+    font-weight:  bolder;
+    box-shadow: 8px 8px 12px black;
+    margin: auto;
+    position: center;
+    width: 300px;
+    padding: 10px;
+}

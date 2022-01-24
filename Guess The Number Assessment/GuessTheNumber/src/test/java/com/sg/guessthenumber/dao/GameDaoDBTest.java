@@ -1,0 +1,98 @@
+
+
+package com.sg.guessthenumber.dao;
+
+import com.sg.guessthenumber.TestApplicationConfiguration;
+import com.sg.guessthenumber.dao.GameDao;
+import com.sg.guessthenumber.entity.Game;
+import java.util.List;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.test.context.junit4.SpringRunner;
+
+/**
+ *
+ * @author ShantelJ
+ */
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class GameDaoDBTest {
+
+    @Lazy
+    @Autowired
+    GameDao gameDao;
+
+    public GameDaoDBTest() {
+    }
+
+    @Before
+    public void setup() {
+        
+        List<Game> games = gameDao.getAllGames();
+        for(Game game : games){
+            gameDao.deleteGame(game.getGameId());
+        }
+    }
+    
+    @Test
+    public void testGetAllGames() {
+        Game game = new Game();
+        game.setAnswer("1234");
+        game.setFinished(false);
+        gameDao.addGame(game);
+
+        Game game2 = new Game();
+        game2.setAnswer("5678");
+        game2.setFinished(false);
+        gameDao.addGame(game2);
+
+        List<Game> games = gameDao.getAllGames();
+
+        assertEquals(2,games.size());
+//        assertTrue(games.contains(game));
+//        assertTrue(games.contains(game2));
+    }
+
+    @Test
+    public void testAddGetGame() {
+        Game game = new Game();
+        game.setAnswer("1234");
+        game.setFinished(false);
+        game = gameDao.addGame(game);
+
+        Game fromDao = gameDao.getGameById(game.getGameId());
+
+        assertEquals(game, fromDao);
+    }
+
+    @Test
+    public void testUpdateGame() {
+        Game game = new Game();
+        game.setAnswer("1234");
+        game.setFinished(false);
+        game = gameDao.addGame(game);
+
+        Game fromDao = gameDao.getGameById(game.getGameId());
+
+        assertEquals(game, fromDao);
+
+        game.setFinished(true);
+
+        gameDao.updateGame(game);
+
+        assertNotEquals(game, fromDao);
+
+        fromDao = gameDao.getGameById(game.getGameId());
+
+        assertEquals(game, fromDao);
+    }
+}

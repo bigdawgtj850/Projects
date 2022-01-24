@@ -1,0 +1,17 @@
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\dto\Change.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\dao\VendingMachineDao.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\dao\VendingMachineDaoFileImpl.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\service\InsufficientFundsException.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\ui\VendingMachineView.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\dto\InventoryItem.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\ui\UserIOConsoleImpl.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\service\ZeroInventoryException.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\service\ItemNotFoundException.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\dao\VendingMachineDaoException.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\ui\UserIO.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\dao\VendingMachineDaoStubImpl.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\app.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\controller\VendingMachineController.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\service\VendingMachineService.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\service\VendingMachineServiceImpl.java
+C:\Users\TJ\Documents\NetBeansProjects\Vending Machine\VendingMachine\src\main\java\com\sg\vendingmachine\service\OutOfCoinsException.java
